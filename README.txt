@@ -1,15 +1,9 @@
 TOSHIBATECH / DYNABOOK ONE PAGE
-Dominio: https://informaticoschamberi.com.es/
-
-⚠️ AVISO — DOMINIO SIN CONFIRMAR (no resuelto, no tocado):
-Este dominio coincide con el nombre del repositorio "InformaticoChamberi",
-pero el cliente ya confirmó que el dominio real de InformaticoChamberi
-es informaticomadrid.com.es (distinto). El cliente también indicó
-explícitamente que "el dominio no es de Toshiba", por lo que
-informaticoschamberi.com.es tampoco parece ser el dominio correcto de
-ESTE repositorio. No se ha modificado ni inventado ningún dominio;
-pendiente de que el cliente confirme cuál es el dominio real de
-ToshibaTech/Dynabook.
+Dominio: https://hpexpert.es/
+(CONFIRMADO por el cliente. Corregido en canonical, og:url, JSON-LD,
+robots.txt y sitemap.xml — antes apuntaban a informaticoschamberi.com.es,
+un dominio que no correspondía a ningún repositorio de la familia
+según lo aclarado por el cliente.)
 
 Teléfono SOLO en caja de información: +34 910 05 37 53
 Teléfono en botones: +34 914 46 85 03 (CORREGIDO en esta nota: el
