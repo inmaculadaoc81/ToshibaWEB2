@@ -28,6 +28,37 @@ enlaces indexados o backlinks antiguos. Excluye /api/* y cualquier
 ruta con extensión de archivo. Se añadió "@vercel/functions": "^2.0.3"
 a package.json como dependencia de esta función.
 
+REVISIÓN ADICIONAL (checklist unificado de la familia, a petición del cliente):
+- H1 repetía la plantilla "no funciona" usada en varios repos ("Tu
+  Dynabook no funciona. Aquí te damos la solución."). Reescrito con
+  estructura distinta a la del repo hermano ToshibaTech (imperativa en
+  vez de dos cláusulas): "Repara tu Dynabook con diagnóstico gratis y
+  garantía." (8 palabras).
+- BUG REAL — texto decorativo gigante ".hardware-art:before"
+  ("DYNABOOK", 76px) sin reducción de tamaño en tablet/móvil, dentro de
+  una caja con overflow:hidden que lo recortaba en pantallas
+  estrechas. Añadida reducción en tablet (56px) y móvil (38px). El
+  ticker ".hero:after" ya se ocultaba correctamente en móvil, no se ha
+  tocado.
+- BUG REAL — ninguno de los dos botones CTA del hero (WhatsApp ni
+  teléfono) tenía icono. Añadidos ambos (verificado con cuidado el
+  cierre de las etiquetas </a>: 25 aperturas / 25 cierres).
+- BUG REAL — el formulario no tenía ninguna casilla de consentimiento
+  de política de privacidad. Añadida desde cero, con el texto y enlace
+  estándar de la familia ("Acepto la política de privacidad" →
+  https://kelatos.com/privacy-policy/), resaltado en azul (#0758a8).
+- Añadida franja de aviso de servicio técnico independiente debajo del
+  menú (no existía). Verificado antes que .header no usa display:flex
+  directamente, solo su .nav interno, para que la franja se apile
+  correctamente debajo.
+- Añadido "Sábados, domingos y días festivos estamos cerrados" debajo
+  del horario.
+- Verificado: no existe ninguna etiqueta/pestaña rotada tipo
+  .hero-chip/.hero-tag/.hero-pill/.hero-label en este repo; schema.org
+  ya usaba correctamente el teléfono de la caja de información
+  (+34 910 05 37 53); formulario correctamente conectado a
+  /api/contacto.
+
 REVISIÓN ADICIONAL (esta pasada):
 - BUG CORREGIDO — schema.org usaba el número de los botones
   (+34914468503) en el campo "telephone", en vez del de la caja de
