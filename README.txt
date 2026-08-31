@@ -1,4 +1,15 @@
 TOSHIBATECH / DYNABOOK ONE PAGE
+
+REVISIÓN ADICIONAL (a petición del cliente, con captura de pantalla):
+- BUG REAL — en la tarjeta roja de YouTube (sección "Confianza"), la
+  etiqueta "YOUTUBE" era del mismo color rojo que el fondo de la
+  tarjeta (.kicker{color:var(--red)} es una regla global reutilizada
+  en toda la web, pero dentro de .trust.youtube el fondo es también
+  rojo, #c9161d), quedando prácticamente invisible. Corregido con
+  ".trust .kicker{color:#fff;opacity:.75}", que además mejora el
+  contraste en la tarjeta de Google Business (fondo gris oscuro, donde
+  el rojo también se leía peor que un blanco atenuado).
+
 Dominio: https://hpexpert.es/
 (CONFIRMADO por el cliente. Corregido en canonical, og:url, JSON-LD,
 robots.txt y sitemap.xml — antes apuntaban a informaticoschamberi.com.es,
