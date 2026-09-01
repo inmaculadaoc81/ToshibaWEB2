@@ -1,5 +1,22 @@
 TOSHIBATECH / DYNABOOK ONE PAGE
 
+REVISIÓN ADICIONAL (checklist unificado de la familia, a petición del cliente — repo 11/48):
+- BUG REAL — enlace de Cal.com desactualizado. Actualizado a
+  https://cal.com/kelatos/30min?embed=true&theme=light&attendeePhoneNumber=%2B34&overlayCalendar=true.
+- Verificado: el correo soporte@kelatos.com no aparece visible.
+- BUG REAL — el mensaje prellenado de WhatsApp decía "¡Hola Kelatos!".
+  Corregido a "¡Hola ToshibaTech!" en el CTA del hero y en el botón
+  flotante.
+- BUG REAL — el menú móvil (#mobileMenu) no tenía ningún listener que
+  lo cerrara al pulsar un enlace. Añadido el script estándar.
+- Verificado: sin iconos ni imágenes con proporciones fijas
+  incorrectas.
+- Verificado: el H1 en móvil ya está en 48px.
+- BUG REAL — botones del hero (.cta) con border-radius de 16px y sin
+  estado hover. Aumentado a border-radius:999px; añadido
+  filter:brightness(.88) en wa/pickup y fondo negro sólido con texto
+  blanco en el botón de teléfono al pasar el ratón.
+
 REVISIÓN ADICIONAL (a petición del cliente, con captura de pantalla):
 - BUG REAL — en la tarjeta roja de YouTube (sección "Confianza"), la
   etiqueta "YOUTUBE" era del mismo color rojo que el fondo de la
