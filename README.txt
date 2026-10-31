@@ -131,3 +131,14 @@ REVISIÓN ADICIONAL (nueva regla de menú móvil, a petición del cliente):
   mantenía fijo/pegado arriba al hacer scroll; no requería cambios.
 - Verificado de nuevo: el checklist de 7 puntos ya estaba aplicado de
   una pasada anterior; no requería cambios.
+
+BLOG (/blog):
+- Los artículos NO viven en este repositorio: los genera y aprueba el agente
+  SEO de Kelatos (Agentes V2 → organización «ToshibaTech», clave toshibatech)
+  y se leen en vivo de la API pública de Kelatos, sin token:
+  https://db.affirmatechnology.com/kelatos-api/publico/blog?org=toshibatech
+- api/blog.js + lib/blog.js generan /blog y /blog/<slug> en el servidor;
+  copian de index.html la cabecera, el aviso, el pie, WhatsApp, cookies y Analytics.
+- api/sitemap.js genera /sitemap.xml (se eliminó el sitemap.xml estático).
+- vercel.json: rewrites del blog; la redirección a la home ya no afecta a /blog.
+- Estilos en assets/blog.css. Enlace «Blog» en el menú (escritorio y móvil) y en el pie.
